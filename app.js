@@ -15,7 +15,8 @@ const http = require('http').Server(app);  // inject app into the server
 // 6 respond with 404 if a bad URI is requested
 
 // Listen for an application request on port 8081
-http.listen(8081, function () {
+const port = process.env.PORT || 8081;
+http.listen(port, function () {
   console.log('app listening on http://127.0.0.1:8081/');
 })
 // 1 set up the view engine
@@ -39,11 +40,6 @@ app.use(logger('combined', { stream: accessLogStream }));
 app.get("/", function (req, res) {
  //res.sendFile(path.join(__dirname + '/assets/index.html'))
  res.render("index.ejs");
-})
-
-// 4 http GET /tic-tac-toe
-app.get("/tic-tac-toe", function (req, res) {
- res.render("application.ejs");
 })
 
 // 4 http GET /about

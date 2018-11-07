@@ -9,6 +9,15 @@
         "body-parser": "latest",
         "ejs": "latest"
     },
+    "devDependencies": {},
+    "scripts": {
+      "ejs": "2.3.3",
+      "express": "4.13.3",
+      "start": "node app.js"
+    },
+    "engines": {
+      "node": "0.12.7"
+    },
     "author": "Rohit Naini",
     "homepage": "https://bitbucket.org/professorcase/a03",
     "repository": {

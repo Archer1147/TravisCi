@@ -1,0 +1,47 @@
+
+    body{
+	
+        height: 200px;
+        color:black;
+        
+        background-image: "https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-903ea3cb.jpg"; 
+    }
+    div.c{
+        text-align: center;
+        padding-bottom: 5em;
+        height:100px;
+        position: center;
+        font-size:10;
+
+    }
+    table, th, td 
+    {
+        border: 2px solid rgb(251, 248, 252);
+    }
+    input[type=submit]:hover 
+    {
+        background-color: #45a049;
+    }
+    footer{   
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding-bottom:5em; 
+        height:80px;
+        word-spacing: 1em;
+       background-color:black;
+    }
+    .videoWrapper {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        padding-top: 25px;
+        height: 0;
+    }
+    .videoWrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
